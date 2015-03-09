@@ -89,4 +89,16 @@ public class Sector implements Comparable<Sector>{
     public int compareTo(Sector another) {
         return this.id.compareTo(another.id);
     }
+
+    @Override
+    public String toString() {
+        return "Sector{" +
+                "id='" + id + '\'' +
+                ", nombre='" + nombre + '\'' +
+                ", olivos=" + olivos +
+                ", diaDeRiego=" + diaDeRiego +
+                ", metodoDeRiego=" + metodoDeRiego +
+                ", zona=" + zona +
+                '}';
+    }
 }
